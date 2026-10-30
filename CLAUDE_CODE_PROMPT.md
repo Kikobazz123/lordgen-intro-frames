@@ -24,20 +24,33 @@ Before running anything, print TABLE A and TABLE B with a status column (✅ rea
 ### TABLE B — shot list (9:16, 1080×1920, 30fps master)
 | Shot | Dur | Source | First frame | Last frame | Tool | Status |
 |---|---|---|---|---|---|---|
+| 0a Owl character sheet | — | AI image | ref: source/owl.jpg | — | Higgsfield image (or Canva generate-image with refs) | ⏳ |
+| 0b Scene sheet | — | AI image | refs: source/city.jpg + sheet 0a | — | same | ⏳ |
 | 1 Flight + landing | 5s | AI | frames/k1_wide.jpg | frames/k2_perch.jpg | Higgsfield · Seedance 2.0 (start+end frame) | ⏳ |
 | 2 Lens push 185→35mm | 2–3s | AI | frames/k2_perch.jpg | frames/k3_close.jpg | Higgsfield · Seedance 2.0 | ⏳ |
 | 3 Eye glint → particle morph → logo build → hold | ~5.3s | Code | comp t=6.65 | comp t=12.0 | `project/index.html` | ✅ |
 
 Expected clips: `clips/shot1.mp4`, `clips/shot2.mp4` (Mark drops best takes there).
 
+## Pre-production — sheets come first (gate: no video until Mark approves both)
+Save approved images to `sheets/`. Use `sheets/owl_sheet.png` as the character reference on every later generation.
+
+Sheet 0a, owl character sheet (16:9, neutral grey studio):
+> Character turnaround sheet of this exact snowy owl, matching its markings, ear tufts, amber eyes and black chevron barring. Panels: front, 3/4, side profile, back, wings fully spread from below, wings spread from behind in flight, and close-ups of eye and feather texture. Same owl, same scale and lighting in every panel, photoreal, clean labels only.
+
+Sheet 0b, scene sheet (16:9, four panels, golden-hour grade, deep-green shadows, gold highlights):
+> Panel 1: the skyline and river background plate, empty sky. Panel 2: the same owl landing full body on the tallest tower tip, wings flared, loose white feathers bursting off and drifting down in the sunlight. Panel 3: 35mm close-up of the perched owl, sharp, city in soft bokeh, eyes catching a gold glint. Panel 4: medium shot of the owl settling, feathers still floating. Same owl as the character sheet, photoreal.
+
+After approval, re-render `frames/k2_perch.jpg` and `frames/k3_close.jpg` from sheet panels 2 and 3 if they look better than the comp frames. Keep the framing so the eyes in k3 stay where the logo eyes land (screen ≈ 439,741 and 641,741 at 1080×1920).
+
 ## Prompts for Mark (Higgsfield)
 Shot 1:
-> Cinematic golden-hour skyline over a river. A white snowy owl flies in from the lower-left foreground, close to camera and slightly out of focus, wings beating powerfully with realistic feather flex. It glides up over the river and lands on the tip of the tallest skyscraper, wings flaring then folding. 185mm telephoto, compressed perspective, smooth slow tilt up. Warm rim light, rippling water reflections, photoreal, no text.
+> Cinematic golden-hour skyline over a river. A white snowy owl flies in from the lower-left foreground, close to camera and slightly out of focus, wings beating powerfully with realistic feather flex. It glides up over the river and lands on the tip of the tallest skyscraper, wings flaring hard. On impact a burst of loose white feathers shakes off and drifts down, glinting in the sunlight, as the wings fold. 185mm telephoto, compressed perspective, smooth slow tilt up. Warm rim light, rippling water reflections, photoreal, no text.
 
 Shot 2:
-> Fast, smooth push-in onto the owl perched on the skyscraper tip, like a lens change from 185mm to 35mm. The city falls into soft bokeh while the owl stays sharp and fills the frame. The owl settles its feathers and looks straight into camera, amber eyes catching a gold glint. Photoreal, shallow depth of field, no text.
+> Fast, smooth push-in onto the owl perched on the skyscraper tip, like a lens change from 185mm to 35mm. The city falls into soft bokeh while the owl stays sharp and fills the frame. Loose feathers still float past the lens; the owl settles and looks straight into camera, amber eyes catching a gold glint. Photoreal, shallow depth of field, no text.
 
-Ask for 2–3 takes each. Reject takes where the owl morphs, gains extra wings, or the last frame drifts from the key frame.
+Attach `sheets/owl_sheet.png` as the character reference. Ask for 2–3 takes each. Reject takes where the owl morphs, gains extra wings, or the last frame drifts from the key frame.
 
 ## Repo map
 - `source/` originals: city.jpg, owl.jpg, logo.png
