@@ -39,16 +39,16 @@ Sheet 0a, owl character sheet (16:9, neutral grey studio):
 > Character turnaround sheet of this exact snowy owl, matching its markings, ear tufts, amber eyes and black chevron barring. Panels: front, 3/4, side profile, back, wings fully spread from below, wings spread from behind in flight, and close-ups of eye and feather texture. Same owl, same scale and lighting in every panel, photoreal, clean labels only.
 
 Sheet 0b, scene sheet (16:9, four panels, golden-hour grade, deep-green shadows, gold highlights):
-> Panel 1: the skyline and river background plate, empty sky. Panel 2: the same owl landing full body on the tallest tower tip, wings flared, loose white feathers bursting off and drifting down in the sunlight. Panel 3: 35mm close-up of the perched owl, sharp, city in soft bokeh, eyes catching a gold glint. Panel 4: medium shot of the owl settling, feathers still floating. Same owl as the character sheet, photoreal.
+> Panel 1: the skyline and river background plate, empty sky. Panel 2: the same owl landing full body on the tallest tower tip, wings flared, two or three loose white feathers slipping free and drifting down in the sunlight. Panel 3: 35mm close-up of the perched owl, sharp, city in soft bokeh, eyes catching a gold glint. Panel 4: medium shot of the owl settling, one feather still floating. Same owl as the character sheet, photoreal.
 
 After approval, re-render `frames/k2_perch.jpg` and `frames/k3_close.jpg` from sheet panels 2 and 3 if they look better than the comp frames. Keep the framing so the eyes in k3 stay where the logo eyes land (screen ≈ 439,741 and 641,741 at 1080×1920).
 
 ## Prompts for Mark (Higgsfield)
 Shot 1:
-> Cinematic golden-hour skyline over a river. A white snowy owl flies in from the lower-left foreground, close to camera and slightly out of focus, wings beating powerfully with realistic feather flex. It glides up over the river and lands on the tip of the tallest skyscraper, wings flaring hard. On impact a burst of loose white feathers shakes off and drifts down, glinting in the sunlight, as the wings fold. 185mm telephoto, compressed perspective, smooth slow tilt up. Warm rim light, rippling water reflections, photoreal, no text.
+> Cinematic golden-hour skyline over a river. A white snowy owl flies in from the lower-left foreground, close to camera and slightly out of focus, wings beating powerfully with realistic feather flex. It glides up over the river and lands on the tip of the tallest skyscraper, wings flaring hard. On impact just two or three loose white feathers slip free and drift slowly down, glinting in the sunlight, as the wings fold. 185mm telephoto, compressed perspective, smooth slow tilt up. Warm rim light, rippling water reflections, photoreal, no text.
 
 Shot 2:
-> Fast, smooth push-in onto the owl perched on the skyscraper tip, like a lens change from 185mm to 35mm. The city falls into soft bokeh while the owl stays sharp and fills the frame. Loose feathers still float past the lens; the owl settles and looks straight into camera, amber eyes catching a gold glint. Photoreal, shallow depth of field, no text.
+> Fast, smooth push-in onto the owl perched on the skyscraper tip, like a lens change from 185mm to 35mm. The city falls into soft bokeh while the owl stays sharp and fills the frame. A single loose feather drifts past the lens; the owl settles and looks straight into camera, amber eyes catching a gold glint. Photoreal, shallow depth of field, no text.
 
 Attach `sheets/owl_sheet.png` as the character reference. Ask for 2–3 takes each. Reject takes where the owl morphs, gains extra wings, or the last frame drifts from the key frame.
 
